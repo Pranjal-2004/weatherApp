@@ -3,7 +3,7 @@ document.getElementById('submit').addEventListener('click', function () {
   const formattedDate = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
   const city = document.getElementById('search').value;
   const apikey = 'ac73eb7595344fcd99643605242110';
-  const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=ac73eb7595344fcd99643605242110&q=${city}&days=7&aqi=yes&alerts=no`;
+  const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=ac73eb7595344fcd99643605242110&q=${city}&days=7&aqi=yes&alerts=no`;
   fetch(apiUrl)
     .then(response => {
       if (response.ok) {
