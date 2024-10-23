@@ -3,6 +3,8 @@ body {
     margin: 0;
     color: white;
     background-color: #0b131e;
+    overflow-x: hidden;
+    /* scrollbar-width: 0; */
 }
 
 .container {
