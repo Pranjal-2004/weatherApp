@@ -1,7 +1,7 @@
 // Function to fetch and display weather data
 function fetchWeather(city = 'Chennai') {
   const apikey = 'ac73eb7595344fcd99643605242110';
-  const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apikey}&q=${city}&days=7&aqi=yes&alerts=no`;
+  const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apikey}&q=${city}&days=7&aqi=yes&alerts=no`;
 
   fetch(apiUrl)
     .then(response => {
